@@ -125,7 +125,7 @@ add_action( 'enqueue_block_editor_assets', 'skygate_add_gutenberg_assets' );
 
 
 function skygate_storefront_header_content() {
-	echo '<h2>Bestel Grind en Zand</h2>';
+	echo '<h2>Skygate</h2>';
 }
 //add_action( 'storefront_header', 'skygate_storefront_header_content', 40 );
 
