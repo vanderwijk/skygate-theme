@@ -1,0 +1,415 @@
+/*
+Theme Name:   	Bestel Grind en Zand
+Theme URI:    	https://skygate.nl
+Author:       	Johan van der Wijk
+Author URI:     https://thewebworks.nl
+Template:     	storefront
+Description:  	This is a child theme for the WooThemes StoreFront theme
+Version:      	1.1.7
+Text Domain:  	skygate
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+}
+
+body {
+	color: #333;
+}
+
+/* Header */
+.main-navigation ul li a {
+	font-weight: 600;
+}
+
+.main-navigation ul li a:hover,
+.main-navigation ul li:hover>a,
+.site-title a:hover,
+.site-header ul.menu li.current-menu-item>a {
+	color: #313131;
+}
+
+.wp-block-cover {
+	border-top: 1px solid rgba(0, 0, 0, .05);
+	border-bottom: 1px solid rgba(0, 0, 0, .05);
+	min-height: auto;
+}
+
+.wp-block-cover h1 strong,
+.wp-block-cover h2 strong,
+.wp-block-cover h3 strong {
+	font-weight: 700;
+}
+
+.hentry .entry-content .wp-block-cover .wp-block-cover__inner-container h1 {
+	font-size: 4em;
+	margin-bottom: .25em;
+}
+
+.hentry .entry-content .wp-block-cover .wp-block-cover__inner-container h2 {
+	font-size: 2em;
+	line-height: 1.250em;
+}
+
+@media (min-width: 768px) {
+
+	.hentry .entry-content .wp-block-cover .wp-block-cover__inner-container {
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	.site-branding {
+		margin-bottom: 0;
+	}
+
+	.storefront-breadcrumb {
+		margin: 0 0 1.706326em;
+	}
+
+	.storefront-full-width-content.woocommerce-cart .entry-header,
+	.storefront-full-width-content.woocommerce-checkout .entry-header,
+	.storefront-full-width-content.woocommerce-account .entry-header,
+	.storefront-full-width-content .woocommerce-products-header {
+		padding: 0 0 1.996835em;
+	}
+}
+
+@media (max-width: 768px) {
+	.page-template-template-fullwidth .hentry .entry-content>.wp-block-cover {
+		margin-bottom: 2em;
+		padding: 1em 0;
+	}
+	.page-template-template-fullwidth .hentry .entry-content>.wp-block-cover h1 {
+		line-height: 1.1;
+		font-size: 2.25em;
+	}
+	.page-template-template-fullwidth .hentry .entry-content>.wp-block-cover h2 {
+		font-size: 1.5em;
+	}
+	.hentry .entry-content .wp-block-cover .wp-block-cover__inner-container {
+		padding: 0;
+	}
+	.home.page-template-template-fullwidth .hentry .entry-content>.wp-block-cover,
+	.home.page-template-template-fullwidth .hentry .entry-content>.wp-block-image {
+		margin-bottom: 2em;
+		background-color: #fff!important;
+	}
+}
+
+.hentry .entry-content .wp-block-button .wp-block-button__link,
+button, input[type="button"], input[type="reset"], input[type="submit"], .button, .widget a.button {
+	border-radius: 5px;
+}
+
+/* Home */
+.home .wp-block-columns {
+	margin-bottom: 0;
+}
+
+.home li.product-category img {
+	border-radius: 1em;
+}
+
+.home ul.products li.product {
+	margin-bottom: 2em;
+}
+
+/* Product */
+.soldout {
+	background: red;
+	border-radius: 50%;
+
+	width: 13px;
+	height: 13px;
+
+	position: absolute;
+	top: 10px;
+	left: 10px;
+
+	z-index: 5;
+}
+
+.stock.in-stock::before,
+.stock.out-of-stock::before {
+	content: '\2B24';
+}
+
+.stock.out-of-stock {
+	color: red;
+}
+
+.stock.in-stock {
+	color: #11d379;
+}
+
+.variations label {
+	color: #f4244a;
+	font-weight: 600;
+}
+
+.wc-tabs li {
+	font-weight: 600;
+}
+
+
+/* Cart */
+.single-product div.product table.variations select {
+	border: 2px solid;
+	border-radius: 5px;
+	padding: 8px 10px;
+}
+
+.required,
+a.remove::before {
+	color: #f4244a !important;
+}
+
+/* Checkout */
+#billing_country_field {
+	display: none;
+}
+
+/* Checkmarks list */
+.checkmarks {
+	margin-left: 0;
+}
+
+.checkmarks li {
+	list-style: none;
+}
+
+.checkmarks li:before {
+	color: #11d379;
+	content: '\2713';
+	margin-right: 5px;
+}
+
+/* Blog */
+.posted-on,
+.post-author,
+.post-comments {
+	display: none;
+}
+
+/* Gravity forms validation */
+.gform_wrapper .gfield_required {
+	color: #f4244a !important;
+}
+
+.gform_wrapper div.validation_error,
+.gform_wrapper .validation_message {
+	color: #f4244a !important;
+	border-color: #f4244a !important;
+}
+
+.gform_wrapper li.gfield.gfield_error,
+.gform_wrapper .field_description_below .gfield_description {
+	border: none !important;
+	background-color: transparent !important;
+	padding: 0 !important;
+}
+
+.gform_wrapper li.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+.gform_wrapper li.gfield_error textarea {
+	border-color: #f4244a !important;
+}
+
+/* Footer */
+.site-footer {
+	border-top: 1px solid rgba(0, 0, 0, .05);
+	color: #333;
+}
+
+.site-info {
+	font-size: .875em;
+}
+
+@media (min-width: 768px) {
+	.site-footer {
+		padding: 0;
+	}
+}
+
+.site-footer a:not(.button):not(.components-button) {
+	color: #618071;
+}
+
+.widget {
+	margin-bottom: 2em;
+}
+
+.widget .widget-title {
+	border: none;
+	font-weight: 600;
+	margin-bottom: .5em;
+	padding-bottom: 0;
+}
+
+.product_list_widget li:last-child {
+	border: none;
+}
+
+.site-footer .widget table td,
+.site-footer .widget table th {
+	padding: .5em 1em;
+	border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+p+h2 {
+	margin-top: 0.290684em;
+}
+
+/* Home */
+.home .content-area,
+.home .site-main {
+	margin-bottom: 0;
+}
+
+/* Rekenhulp
+----------------------------------------------------------------------------------------------------*/
+.calculator {
+	background-color: #837b7c;
+	background-color: rgba(131, 123, 124, 0.1);
+	border: 1px dashed #837b7c;
+	font-size: 18px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.calculator label,
+.calculator input {
+	display: block;
+}
+
+.calculator label,
+.radiobuttons p {
+	margin-bottom: 8px;
+}
+
+.calculator input {
+	margin-bottom: 16px;
+	width: 25%;
+	padding: 5px;
+	font-size: 18px;
+}
+
+.calculator input[type='number'] {
+	background-color: #ffffff;
+}
+
+.calculator input[type='radio'] {
+	margin: 16px 18px 16px 8px;
+}
+
+.radiobuttons label,
+.radiobuttons input {
+	display: inline-block;
+	width: auto;
+}
+
+.calculator span.result {
+	color: #f4244a;
+	font-weight: 600;
+}
+
+.klantenservice li {
+	margin-bottom: 1em;
+}
+
+.site-footer .flex {
+	display: flex;
+	flex-direction: row;
+	align-content: flex-start;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (max-width: 768px) {
+	.site-footer .flex {
+		flex-direction: column;
+	}
+}
+
+.jump-menu {
+	font-size: .875em;
+	margin: 11px 0 0 0;
+	padding: 2px 6px 1px 3px;
+}
+
+.site-info {
+	text-align: right;
+}
+
+/* Product page */
+.woocommerce-tabs .panel h2:first-of-type {
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+.woocommerce-tabs .panel h2 {
+	font-size: 1.618em;
+	margin-bottom: .5em;
+	margin-top: .5em;
+}
+.woocommerce-tabs .panel h3 {
+	font-size: 1.418em;
+	margin-bottom: .5em;
+	margin-top: .5em;
+}
+
+
+/* Rank Math FAQ */
+
+.faq h3 {
+	font-size: 1.250em;
+}
+.faq h4 {
+	font-size: 1em;
+}
+
+.wp-block-group.faq {
+	background-color: rgba(97, 128, 113, 0.15);
+	border-radius: 1em;
+	padding: 1.25em;
+}
+
+.rank-math-list-item {
+	border-bottom: 1px solid #fff;
+	margin: 1em 0;
+}
+
+.rank-math-list-item:last-child {
+	border: none;
+	margin-bottom: 0;
+}
+
+.rank-math-question {
+	color:rgba(97, 128, 113, 1);
+	cursor: pointer;
+	position: relative;
+	display: block;
+	padding-right: 1.5em;
+	margin-right: .5em;
+}
+
+.rank-math-question:after {
+	position: absolute;
+	right: 5px;
+	top: 0;
+	content: '\2715';
+	transform: rotate(-45deg);
+	transition: all 150ms ease-in-out;
+}
+
+.rank-math-question.collapse:after {
+	transform: rotate(0deg);
+}
+
+.rank-math-question:hover {
+	color:rgba(72, 103, 88, 1);
+	
+}
