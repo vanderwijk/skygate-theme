@@ -45,7 +45,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 
 <?php }
-add_action( 'wp_head', 'skygate_scripts_head', 10 );
+//add_action( 'wp_head', 'skygate_scripts_head', 10 );
 
 
 function skygate_scripts_body() { ?>
@@ -142,26 +142,7 @@ if ( ! function_exists( 'storefront_credit' ) ) {
 		<div class="flex">
 			<select class="jump-menu" onchange="javascript:location.href = this.value;">
 				<option value="https://skygate.nl/">Snelmenu</option>
-				<option value="https://skygate.nl/product/schelpen/">Schelpen</option>
-				<option value="https://skygate.nl/product/betonzand/">Betonzand</option>
-				<option value="https://skygate.nl/product/voegzand/">Voegzand</option>
-				<option value="https://skygate.nl/product/zilverzand/">Zilverzand</option>
-				<option value="https://skygate.nl/product/tuingrind-8-16/">Tuingrind 8-16</option>
-				<option value="https://skygate.nl/product/dakgrind-16-32/">Dakgrind 16-32</option>
-				<option value="https://skygate.nl/tuingrind/">Tuingrind</option>
-				<option value="https://skygate.nl/product/ophoogzand/">Ophoogzand</option>
-				<option value="https://skygate.nl/product/metselzand/">Metselzand</option>
-				<option value="https://skygate.nl/product/brekerzand/">Brekerzand</option>
-				<option value="https://skygate.nl/product/speelzand/">Speelzand</option>
-				<option value="https://skygate.nl/product/straatzand/">Straatzand</option>
-				<option value="https://skygate.nl/zandbakzand/">Zandbakzand</option>
-				<option value="https://skygate.nl/bigbag-betonzand/">Bigbag betonzand</option>
-				<option value="https://skygate.nl/siergrind/">Siergrind</option>
-				<option value="https://skygate.nl/big-bag-siergrind/">Big bag siergrind</option>
-				<option value="https://skygate.nl/dakgrind/">Dakgrind</option>
-				<option value="https://skygate.nl/bigbag-ophoogzand/">Bigbag ophoogzand</option>
-				<option value="https://skygate.nl/bigbag-metselzand/">Bigbag metselzand</option>
-				<option value="https://skygate.nl/bigbag-brekerzand/">Bigbag brekerzand </option>
+				<option value="https://skygate.nl/stalen-deuren/taatsdeuren/enkele-stalen-taatsdeur/">Enkele Stalen Taatsdeur</option>
 			</select>
 			<div class="site-info">
 				<?php echo esc_html( apply_filters( 'storefront_copyright_text', $content = '&copy; ' . get_bloginfo( 'name' ) . ' ' . date( 'Y' ) ) ); ?>

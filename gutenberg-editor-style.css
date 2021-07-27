@@ -1,3 +1,32 @@
-.editor-styles-wrapper {
-	/*background-color: #40474f;*/
+/* Buttons */
+.editor-styles-wrapper .wp-block-button {
+	color: rgba(255, 255, 255, 1);
+	border: 2px solid rgba(255, 255, 255, 1);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.editor-styles-wrapper .wp-block-button.is-style-fill .wp-block-button__link {
+	background-color: rgba(208, 170, 73, 1);
+}
+.editor-styles-wrapper .wp-block-button.is-style-outline .wp-block-button__link {
+	background-color: transparent;
+}
+.editor-styles-wrapper .wp-block-button.is-style-fill .wp-block-button__link:hover, 
+.editor-styles-wrapper .wp-block-button.is-style-outline .wp-block-button__link:hover {
+	background-color: rgba(255, 255, 255, 1);
+	border-color: rgba(208, 170, 73, 1);
+	color: rgba(208, 170, 73, 1);
+}
+.editor-styles-wrapper .wp-block-cover__inner-container {
+	background-color: rgba(0,0,0,0.6);
+}
+
+.editor-styles-wrapper.block-editor-writing-flow h1,
+.editor-styles-wrapper.block-editor-writing-flow h2,
+.editor-styles-wrapper.block-editor-writing-flow h3 {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.editor-styles-wrapper.block-editor-writing-flow .wp-block-cover .wp-block-cover__inner-container h1 {
+	font-size: 2.7em;
 }
