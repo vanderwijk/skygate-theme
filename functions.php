@@ -1,6 +1,6 @@
 <?php
 
-define('skygate_THEME_VER', '1.1.7');
+define('skygate_THEME_VER', '1.1.8');
 
 // Child theme textdomain
 function skygate_child_theme_setup() {
