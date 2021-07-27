@@ -10,8 +10,11 @@ Text Domain:  	skygate
 */
 
 :root {
-	--accent: #c1a56e;
-	--accent-light: rgba(193, 165, 110, .1);
+	--accent-color: rgba(208, 170, 73, 1);
+	--accent-color-light: rgba(208, 170, 73, .1);
+	--text-shadow-dark: 0 0 2px rgba(0, 0, 0, 1);
+	--text-shadow-medium: 0 0 2px rgba(0, 0, 0, .6);
+	--text-shadow-light:  0 0 2px rgba(0, 0, 0, .3);
 }
 
 h1,
@@ -57,20 +60,9 @@ h1, h2, h3 {
 .main-navigation ul li:hover>a,
 .site-title a:hover,
 .site-header ul.menu li.current-menu-item>a {
-	color: #313131;
+	color: #1A171B;
 }
 
-.wp-block-cover {
-	border-top: 1px solid rgba(0, 0, 0, .05);
-	border-bottom: 1px solid rgba(0, 0, 0, .05);
-	min-height: auto;
-}
-
-.wp-block-cover h1 strong,
-.wp-block-cover h2 strong,
-.wp-block-cover h3 strong {
-	font-weight: 700;
-}
 
 .hentry .entry-content .wp-block-cover .wp-block-cover__inner-container {
 	margin-left: 10%;
@@ -79,13 +71,13 @@ h1, h2, h3 {
 .hentry .entry-content .wp-block-cover .wp-block-cover__inner-container h1 {
 	font-size: 4em;
 	margin-bottom: .25em;
-	text-shadow: 0 0 2px #000;
+	text-shadow: var(--text-shadow-dark);
 }
 
 .hentry .entry-content .wp-block-cover .wp-block-cover__inner-container p:not(.has-small-font-size):not(.has-medium-font-size):not(.has-large-font-size):not(.has-huge-font-size), 
 .editor-styles-wrapper .wp-block-cover .wp-block-cover__inner-container p:not(.has-small-font-size):not(.has-medium-font-size):not(.has-large-font-size):not(.has-huge-font-size) {
 	font-size: 1.125rem; /* 18px */
-	text-shadow: 0 0 2px #000;
+	text-shadow: var(--text-shadow-dark);
 }
 
 @media (min-width: 768px) {
@@ -302,53 +294,6 @@ p+h2 {
 	margin-bottom: 0;
 }
 
-/* Rekenhulp
-----------------------------------------------------------------------------------------------------*/
-.calculator {
-	background-color: #837b7c;
-	background-color: rgba(131, 123, 124, 0.1);
-	border: 1px dashed #837b7c;
-	font-size: 18px;
-	padding: 20px;
-	margin-bottom: 20px;
-}
-
-.calculator label,
-.calculator input {
-	display: block;
-}
-
-.calculator label,
-.radiobuttons p {
-	margin-bottom: 8px;
-}
-
-.calculator input {
-	margin-bottom: 16px;
-	width: 25%;
-	padding: 5px;
-	font-size: 18px;
-}
-
-.calculator input[type='number'] {
-	background-color: #ffffff;
-}
-
-.calculator input[type='radio'] {
-	margin: 16px 18px 16px 8px;
-}
-
-.radiobuttons label,
-.radiobuttons input {
-	display: inline-block;
-	width: auto;
-}
-
-.calculator span.result {
-	color: #f4244a;
-	font-weight: 600;
-}
-
 .klantenservice li {
 	margin-bottom: 1em;
 }
@@ -420,7 +365,7 @@ p+h2 {
 }
 
 .rank-math-question {
-	color:var(--accent);
+	color:var(--accent-color);
 	cursor: pointer;
 	position: relative;
 	display: block;
@@ -453,7 +398,7 @@ p+h2 {
 }
 
 .intro {
-	background-color: var(--accent-light);
+	background-color: var(--accent-color-light);
 	padding-top: 1em;
 	padding: 5% 15%!important;
 }
@@ -506,11 +451,11 @@ p+h2 {
 }
 .collectie .wp-block-column h3 {
 	margin: 0;
-	background-color: var(--accent);
+	background-color: var(--accent-color);
 	color: #fff;
 	padding: 5px 0;
 	font-size: 1.375rem; /* 22px */
-	text-shadow: 0 0 2px rgba(0, 0, 0, .3);
+	text-shadow: var(--text-shadow--light);
 }
 .collectie .wp-block-column .wp-block-image {
 	margin-bottom: 0!important;
@@ -533,7 +478,7 @@ p+h2 {
 }
 
 .inspiratie {
-	background-color: var(--accent-light);
+	background-color: var(--accent-color-light);
 	padding-top: 1em;
 	padding: 5% 15%!important;
 }
@@ -543,7 +488,7 @@ p+h2 {
 	content: "";
 	position: absolute;
 	width: 0;
-	background: var(--accent);
+	background: var(--accent-color);
 	height: 2px;
 	bottom: 20px;
 	margin-left: auto;
@@ -572,11 +517,11 @@ p+h2 {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
-	text-shadow: 0 0 2px rgba(0, 0, 0, .3);
+	text-shadow:var(--text-shadow--light);
 }
 .hentry .entry-content .wp-block-button.is-style-fill .wp-block-button__link, 
 .editor-styles-wrapper .wp-block-button.is-style-fill .wp-block-button__link {
-	background-color: var(--accent);
+	background-color: var(--accent-color);
 }
 .hentry .entry-content .wp-block-button.is-style-outline .wp-block-button__link, 
 .editor-styles-wrapper .wp-block-button.is-style-outline .wp-block-button__link {
@@ -587,8 +532,8 @@ p+h2 {
 .hentry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:hover, 
 .editor-styles-wrapper .wp-block-button.is-style-outline .wp-block-button__link:hover {
 	background-color: rgba(255, 255, 255, 1);
-	border-color: var(--accent);
-	color: var(--accent);
+	border-color: var(--accent-color);
+	color: var(--accent-color);
 	text-shadow: none;
 }
 .hentry .entry-content .wp-block-button .wp-block-button__link:active, 
@@ -638,7 +583,7 @@ p+h2 {
 }
 
 .site .woa-top-bar-wrap {
-	background-color: var(--accent);
+	background-color: var(--accent-color);
 }
 
 .woa-top-bar-wrap a {
