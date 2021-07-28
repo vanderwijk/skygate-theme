@@ -5,7 +5,7 @@ Author:       	Johan van der Wijk
 Author URI:     https://thewebworks.nl
 Template:     	storefront
 Description:  	This is a child theme for the WooThemes StoreFront theme
-Version:      	1.1.8
+Version:      	1.1.9
 Text Domain:  	skygate
 */
 
@@ -15,6 +15,49 @@ Text Domain:  	skygate
 	--text-shadow-dark: 0 0 2px rgba(0, 0, 0, 1);
 	--text-shadow-medium: 0 0 2px rgba(0, 0, 0, .6);
 	--text-shadow-light:  0 0 2px rgba(0, 0, 0, .3);
+}
+
+/* source-sans-pro-regular - latin */
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('./assets/fonts/source-sans-pro-v14-latin-regular.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('./assets/fonts/source-sans-pro-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('./assets/fonts/source-sans-pro-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('./assets/fonts/source-sans-pro-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+		 url('./assets/fonts/source-sans-pro-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('./assets/fonts/source-sans-pro-v14-latin-regular.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
+/* source-sans-pro-600 - latin */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+font-display: swap;
+src: url('./assets/fonts/source-sans-pro-v14-latin-600.eot'); /* IE9 Compat Modes */
+src: local(''),
+		url('./assets/fonts/source-sans-pro-v14-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('./assets/fonts/source-sans-pro-v14-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./assets/fonts/source-sans-pro-v14-latin-600.woff') format('woff'), /* Modern Browsers */
+		url('./assets/fonts/source-sans-pro-v14-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./assets/fonts/source-sans-pro-v14-latin-600.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
+/* source-sans-pro-700 - latin */
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('./assets/fonts/source-sans-pro-v14-latin-700.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('./assets/fonts/source-sans-pro-v14-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('./assets/fonts/source-sans-pro-v14-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('./assets/fonts/source-sans-pro-v14-latin-700.woff') format('woff'), /* Modern Browsers */
+		 url('./assets/fonts/source-sans-pro-v14-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('./assets/fonts/source-sans-pro-v14-latin-700.svg#SourceSansPro') format('svg'); /* Legacy iOS */
 }
 
 h1,

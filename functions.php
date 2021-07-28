@@ -1,6 +1,6 @@
 <?php
 
-define('skygate_THEME_VER', '1.1.8');
+define('skygate_THEME_VER', '1.1.9');
 
 // Child theme textdomain
 function skygate_child_theme_setup() {
@@ -11,6 +11,8 @@ add_action( 'after_setup_theme', 'skygate_child_theme_setup' );
 
 function skygate_scripts_styles () {
 
+	wp_dequeue_style( 'storefront-fonts' );
+
 	wp_register_script( 'faq-accordion', get_stylesheet_directory_uri() . '/assets/js/faq-accordion.js', array( 'jquery' ), skygate_THEME_VER, true );
 
 	if ( is_front_page() ) {
@@ -19,9 +21,6 @@ function skygate_scripts_styles () {
 
 }
 add_action( 'wp_enqueue_scripts', 'skygate_scripts_styles' );
-
-
-require 'shortcode-calculator.php';
 
 
 function skygate_scripts_head() { ?>
@@ -56,7 +55,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <?php }
-add_action( 'wp_body_open', 'skygate_scripts_body', 10 );
+//add_action( 'wp_body_open', 'skygate_scripts_body', 10 );
 
 
 // Get most expensive variable and tag this for remarketing in Google Ads
@@ -88,7 +87,7 @@ function skygate_dynamic_remarketing() {
 		}
 	}
 }
-add_action( 'wp_footer', 'skygate_dynamic_remarketing', 10 );
+//add_action( 'wp_footer', 'skygate_dynamic_remarketing', 10 );
 
 
 // Conversion tracking
@@ -114,7 +113,7 @@ function skygate_track_conversion( $order_id ) {
 
 	}
 }
-add_action('woocommerce_thankyou', 'skygate_track_conversion', 10, 1);
+//add_action('woocommerce_thankyou', 'skygate_track_conversion', 10, 1);
 
 
 // Add backend styles for Gutenberg.
@@ -228,7 +227,7 @@ function rekenhulp_tab( $tabs ) {
 	}
 	return $tabs;
 }
-add_filter( 'woocommerce_product_tabs', 'rekenhulp_tab' );
+//add_filter( 'woocommerce_product_tabs', 'rekenhulp_tab' );
 
 
 function rekenhulp_tab_callback() {
@@ -251,7 +250,7 @@ function skygate_seo_description_product_tab() {
 	global $product;
 	return __('Productbeschrijving', 'skygate') . ' ' . $product->get_name();
 }
-add_filter( 'woocommerce_product_description_heading', 'skygate_seo_description_product_tab' );
+//add_filter( 'woocommerce_product_description_heading', 'skygate_seo_description_product_tab' );
 
 
 function skygate_seo_add_to_cart_button() {
